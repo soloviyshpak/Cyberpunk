@@ -1,0 +1,31 @@
+// button
+@mixin button ($btn_color, $btn_bkg, $btn_padd, $btn_w, $btn_fz) {
+   display: block;
+   color: $btn_color;
+   font-weight: 700;
+   font-size: $btn_fz;
+   background: $btn_bkg;
+   padding: $btn_padd;
+   width: $btn_w;
+   transition: all .2s;
+   text-align: center;
+   &:hover{
+      transform: scale(1.1);
+   }
+}
+
+// title
+@mixin title ($title_color) {
+   font-family: Archangelsk;
+   font-weight: 400;
+   font-size: 62px;
+   line-height: 1.01;
+   color: $title_color;
+}
+
+// media
+@mixin media ($maw) {
+   @media screen and (max-width: $maw) {
+       @content;
+   }
+}

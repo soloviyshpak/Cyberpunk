@@ -1,0 +1,122 @@
+.header {
+   background: url('../img/header-banners/1920/hero-banner1.jpg') 100% 100% no-repeat;
+   background-size: cover;
+   background-position: center center;
+   height: 106vh;
+   animation: bcg_change 20s infinite;
+   @include media (800px) {
+      height: 88.7vh;
+   }
+}
+.header__inner {
+   height: 106vh;
+   position: relative;
+   padding: 0 36px;
+   @include media (800px) {
+      height: 88.7vh;
+   }
+}
+.header__bar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 20px;
+   @include media (800px) {
+      flex-direction: column;
+   }
+}
+.header__logo {
+   transition: all .3s;
+   &:hover {
+      transform: scale(1.2);
+   }
+   img {
+      @include media (800px) {
+         max-width: 200px;
+      }
+   }
+   @include media (800px) {
+      margin-bottom: 10px;
+   }
+}
+.header__socials-list {
+   display: flex;
+}
+.header__socials-item {
+   margin-right: 40px;
+   transition: all .3s;
+   @include media (800px) {
+      margin-right: 27px;
+   }
+   &:last-child {
+      margin: 0;
+   }
+   &:hover {
+      transform: scale(1.2);
+   }
+   a {
+      img{
+         @include media (800px) {
+            width: 27px;
+         }
+      }
+      
+   }
+}
+.header__access {
+   background: $accent-color1;
+   max-width: 624px;
+   padding: 70px;
+   clip-path: polygon(8% 0, 100% 0, 100% 86%, 91% 100%, 0 100%, 0% 60%, 0 13%);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   @include media(1280px) {
+      right: 36px;
+   }
+   @include media (800px) {
+      max-width: 320px;
+      right: 0;
+      padding: 30px 13px;
+   }
+}
+.header__access-title {
+   font-family: Archangelsk;
+   font-weight: 400;
+   font-size: 62px;
+   color: $accent-color2;
+   line-height: 1.01;
+   @include media (800px) {
+      font-size: 30px;
+      text-align: center;
+   }
+}
+.header__access-button {
+   margin-top: 25px;
+   @include button($accent-color1, $accent-color2, 19px 50px, 272px, 24px);
+   @include media (800px) {
+      width: 244px;
+      font-size: 20px;
+      padding: 10px 50px;
+      margin: 25px auto 0;
+   }
+}
+
+
+@keyframes bcg_change {
+   0% {
+      background: url('../img/header-banners/1920/hero-banner1.jpg') 100% 100% no-repeat;
+      background-size: cover;
+      background-position: center center;
+   }
+   35% {
+      background: url('../img/header-banners/1920/hero-banner2.jpg') 100% 100% no-repeat;
+      background-size: cover;
+      background-position: center center;
+   }
+   68% {
+      background: url('../img/header-banners/1920/hero-banner3.jpg') 100% 100% no-repeat;
+      background-size: cover;
+      background-position: center center;
+   }
+}

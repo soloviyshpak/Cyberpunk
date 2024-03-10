@@ -1,0 +1,47 @@
+/* Roboto */
+/* light 300 */
+@font-face {
+   font-family: Roboto;
+   font-weight: 300;
+   font-style: normal;
+   src: local("Roboto"),
+       url("../fonts/roboto-light.woff2") format('woff2'),
+       url("../fonts/roboto-light.woff") format('woff'),
+       url("../fonts/roboto-light.eot") format('eot');
+   font-display: swap;
+}
+/* regular 400 */
+@font-face {
+   font-family: Roboto;
+   font-weight: 400;
+   font-style: normal;
+   src: local("Roboto"),
+       url("../fonts/roboto-regular.woff2") format('woff2'),
+       url("../fonts/roboto-regular.woff") format('woff'),
+       url("../fonts/roboto-regular.eot") format('eot');
+   font-display: swap;
+}
+/* bold 700 */
+@font-face {
+   font-family: Roboto;
+   font-weight: 700;
+   font-style: normal;
+   src: local("Roboto"),
+       url("../fonts/roboto-bold.woff2") format('woff2'),
+       url("../fonts/roboto-bold.woff") format('woff'),
+       url("../fonts/roboto-bold.eot") format('eot');
+   font-display: swap;
+}
+
+/* Archangelsk */
+/* regular 400 */
+@font-face {
+   font-family: Archangelsk;
+   font-weight: 400;
+   font-style: normal;
+   src: local("Archangelsk"),
+       url("../fonts/archangelsk-regular.woff2") format('woff2'),
+       url("../fonts/archangelsk-regular.woff") format('woff'),
+       url("../fonts/archangelsk-regular.eot") format('eot');
+   font-display: swap;
+}

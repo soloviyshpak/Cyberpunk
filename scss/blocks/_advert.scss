@@ -1,0 +1,192 @@
+.advert {
+   background: $accent-color1;
+   padding-top: 70px;
+   padding-bottom: 80px;
+   @include media (550px) {
+      padding-top: 33px;
+   }
+}
+.advert__inner {
+   display: flex;
+   padding: 0 36px;
+   @include media (1000px) {
+      flex-direction: column;
+   }
+   @include media (550px) {
+      padding: 0 12px;
+   }
+}
+.advert__decor {
+   max-width: 624px;
+   margin-right: 32px;
+   @include media (1000px) {
+      margin: 0 auto 40px;
+   }
+}
+.advert__monitor {
+   margin-bottom: 26px;
+   @include media (1200px) {
+      margin-top: 37px;
+      img {
+         max-width: 456px;
+         @include media (550px) {
+           width: 296px;
+            height: 204px;
+         }
+      }
+   }
+   @include media (1000px) {
+      text-align: center;
+   }
+   
+}
+.advert__logos {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   @include media (1200px) {
+      flex-direction: column;
+   }
+   @include media (1000px) {
+      flex-direction: row;
+   }
+}
+.advert__hpLogo {
+   margin-right: 25px;
+   @include media (1200px) {
+      margin: 0 0 34px 0;
+   }
+   @include media (1000px) {
+      margin: 0;
+   }
+   @include media (550px) {
+      width: 44px;
+      height: 44px;
+   }
+}
+.advert__line {
+   display: block;
+   width: 91px;
+   height: 1px;
+   background: $accent-color2;
+   transform: rotate(12deg);
+   position: relative;
+   &::before {
+      content: '';
+      width: 91px;
+      height: 1px;
+      background: $accent-color2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(-24deg);
+      @include media (550px) {
+         width: 50px;
+      }
+   }
+   @include media (1200px) {
+      margin: 0 0 34px 0;
+   }
+   @include media (1000px) {
+      margin: 0 14px 0;
+   }
+   @include media (550px) {
+      width: 50px;
+   }
+}
+.advert__cpLogo {
+   margin-left: 25px;
+   @include media (1000px) {
+      margin: 0;
+   }
+   @include media (550px) {
+      width: 175px;
+      height: 43px;
+   }
+}
+.advert__content {
+}
+.advert__title {
+   @include title($accent-color2);
+   margin-bottom: 25px;
+   @include media (550px) {
+      font-size: 30px;
+   }
+}
+.advert__text {
+   color: $accent-color2;
+   margin-bottom: 25px;
+   @include media (550px) {
+      font-size: 16px;
+      line-height: 2;
+   }
+}
+.advert__benefits {
+   margin-bottom: 40px;
+   padding-left: 40px;
+
+   .advert__benefits-item--paint {
+      &::before {
+         width: 24px;
+         height: 24px;
+         background: url('../img/icons/hp/paint.svg');
+         @include media (550px) {
+            background-size: cover;
+            width: 18px;
+            height: 18px;
+         }
+      }
+   }
+   .advert__benefits-item--stars {
+      &::before {
+         background: url('../img/icons/hp/stars.svg');
+         width: 30px;
+         height: 30px;
+         @include media (550px) {
+            background-size: cover;
+            width: 22px;
+            height: 22px;
+         }
+      }
+   }
+   .advert__benefits-item--gameplay {
+      &::before {
+         background: url('../img/icons/hp/copy.svg');
+         width: 28px;
+         height: 28px;
+         @include media (550px) {
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+         }
+      }
+   }
+}
+.advert__benefits-item {
+   color: $accent-color2;
+   position: relative;
+   margin-bottom: 20px;
+   &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+   }
+   &:last-child {
+      margin: 0;
+   }
+   @include media (550px) {
+      font-size: 16px;
+      line-height: 1.18;
+      margin-bottom: 18px;
+   }
+}
+.advert__btn {
+   @include button ($accent-color1, $accent-color2, 13px 50px, 194px, 18px);
+   font-weight: 700;
+   @include media (550px) {
+      font-size: 16px;
+   }
+}
